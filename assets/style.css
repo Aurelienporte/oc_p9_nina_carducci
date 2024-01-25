@@ -6,6 +6,10 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
+img{
+	width: 100%;
+	height: auto;
+}
 .top-header {
 	background-color: white;
 	position: sticky;
@@ -88,10 +92,6 @@ body {
 #about-me p {
 	width: 80%;
 	font-size: 14px;
-}
-
-#gallery {
-	/*	min-height: 100vh; */
 }
 .title{
 	text-align: center;
@@ -343,4 +343,3 @@ input[type="submit"] {
 		width: 80%;
 	}
 }
-
