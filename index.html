@@ -89,9 +89,11 @@
                   ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1950.webp 1950w,
                   ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1440.webp 1440w,
                   ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1024.webp 1024w,
+                  ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-768.webp   768w,
                   ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-480.webp   480w
                 "
-                sizes="(min-width: 2040px) 1920px, calc(94.19vw + 17px)"
+                sizes="(min-width: 2040px) 1920px,
+                calc(94.19vw + 17px)"
                 class="d-block w-100"
                 alt="Un homme en costume noir vu de dos traverse la rue.
 				Autour de lui on ne voit que les zébrures du passage piéton"
@@ -152,13 +154,16 @@
       <section id="about">
         <div class="picture left">
           <img
-            srcset="
-              ./assets/images/nina-384.webp 384w,
-              ./assets/images/nina-500.webp 500w,
-              ./assets/images/nina-560.webp 560w
-            "
-            sizes="(min-width:481px) 500px,(min-width:1001px) 560px, 384px"
             src="./assets/images/nina-384.webp"
+            srcset="
+              ./assets/images/nina-560.webp 560w,
+              ./assets/images/nina-500.webp 500w,
+              ./assets/images/nina-384.webp 384w
+            "
+            sizes="(min-width: 2020px) 560px,
+             (min-width: 1200px) calc(30vw - 40px),
+              (min-width: 660px) calc(46.15vw - 75px),
+               calc(80vw - 51px)"
             alt="portrait de nina carducci de face habillé d'une salopette"
             style="aspect-ratio: 384 / 383"
           />
