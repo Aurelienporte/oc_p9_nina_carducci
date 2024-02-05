@@ -16,7 +16,8 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
       rel="preload"
-      as="style"
+      as="font"
+      crossorigin
     />
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/style.css" />
@@ -28,6 +29,18 @@
     ></script>
     <script src="./assets/maugallery.min.js" defer></script>
     <script src="./assets/scripts.min.js" defer></script>
+    <meta property="og:site_name" content="nina-carducci.com" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://aurelienporte.github.io/oc_p9_nina_carducci/"
+    />
+    <meta property="og:title" content="Nina Carducci - Photographe" />
+    <meta
+      property="og:description"
+      content="Découvrez mon univers et mes services"
+    />
+    <meta property="og:image" content="./assets/images/og-picture.webp" />
   </head>
   <body>
     <header class="top-header">
@@ -102,21 +115,21 @@
             </div>
             <div class="carousel-item">
               <img
-              src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-480.webp"
-              srcset="
-              ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1950.webp
-              1950w,
-              ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1440.webp
-              1440w,
-              ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1024.webp
-              1024w,
-              ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-768.webp
-              768w,
-              ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-480.webp
-              480w " sizes="(min-width: 2040px) 1920px, calc(94.19vw + 17px)""
-              class="d-block w-100" alt="Une foule de participants à un concert,
-              plusieurs ont les bras en l'air." style="aspect-ratio: 480 / 222"
-              loading="lazy" />
+                src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-480.webp"
+                srcset="
+                  ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1950.webp 1950w,
+                  ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1440.webp 1440w,
+                  ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1024.webp 1024w,
+                  ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-768.webp   768w,
+                  ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-480.webp   480w
+                "
+                sizes="(min-width: 2040px) 1920px, calc(94.19vw + 17px)"
+                class="d-block w-100"
+                alt="Une foule de participants à un concert,
+              plusieurs ont les bras en l'air."
+                style="aspect-ratio: 480 / 222"
+                loading="lazy"
+              />
             </div>
             <div class="carousel-item">
               <img
@@ -394,7 +407,38 @@
             />
           </div>
         </div>
+        <!-- <div itemscope itemtype="https://schema.org/Localbusiness">
+          <h1 itemprop="name">Nina Carducci | Photographe</h1>
+          <div
+            itemprop="address"
+            itemscope
+            itemtype="https://schema.org/PostalAddress"
+          >
+            <span itemprop="streetAddress">68 avenue d'Alsace-Lorraine</span>
+            <span itemprop="postalCode">33200</span>
+            <span itemprop="addressLocality">Bordeaux, France</span>
+          </div>
+          Tel : <span itemprop="telephone">05 56 67 78 89</span> Horaires :
+          <span itemprop="openingHours" content="Mo,Tu,We,Th,Fr 10:00-19:00"
+            >lun-ven 10h-19h</span
+          >
+        </div> -->
       </section>
     </main>
   </body>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Nina Carducci | Photographe",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "68 avenue d'Alsace-Lorraine",
+        "postalCode": "33200",
+        "addressLocality": "Bordeaux"
+      },
+      "telephone": "05 56 67 78 89",
+      "openingHours": "Mo,Tu,We,Th,Fr 10:00-19:00"
+    }
+  </script>
 </html>
