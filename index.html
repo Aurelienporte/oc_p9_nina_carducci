@@ -9,6 +9,23 @@
       name="description"
       content="Voir mon portfolio - Consulter mes tarifs - Me contacter"
     />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Nina Carducci | Photographe",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 avenue d'Alsace-Lorraine",
+          "postalCode": "33200",
+          "addressLocality": "Bordeaux"
+        },
+        "telephone": "05 56 67 78 89",
+        "openingHours": "Mo,Tu,We,Th,Fr 10:00-19:00",
+        "priceRange": "50&euro; - 350&euro;",
+        "image": "https://aurelienporte.github.io/oc_p9_nina_carducci/assets/images/nina-384.webp"
+      }
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -130,8 +147,7 @@
                 "
                 sizes="(min-width: 2040px) 1920px, calc(94.19vw + 17px)"
                 class="d-block w-100"
-                alt="Un homme en costume noir vu de dos traverse la rue.
-				Autour de lui on ne voit que les zébrures du passage piéton"
+                alt="Un homme en costume noir vu de dos traverse la rue, autour de lui les zébrures du passage piéton."
                 style="aspect-ratio: 480 / 222"
               />
             </div>
@@ -204,7 +220,7 @@
              (min-width: 1200px) calc(30vw - 40px),
               (min-width: 660px) calc(46.15vw - 75px),
                calc(80vw - 51px)"
-            alt="portrait de nina carducci de face habillé d'une salopette"
+            alt="portrait de nina carducci de face habillée d'une salopette"
             style="aspect-ratio: 384 / 383"
           />
         </div>
@@ -239,7 +255,7 @@
               class="gallery-item"
               loading="lazy"
               src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash-500.webp"
-              alt="Prise de vue par Nina Carducci d'un concert depuis la fosse. En bas on voit le public à contre-jour d'une lumière rouge lever les bras."
+              alt="Concert vu depuis la fosse. En bas, le public à contre-jour d'une lumière rouge lève les bras."
             />
             <img
               style="aspect-ratio: 500 / 750"
@@ -255,8 +271,7 @@
               class="gallery-item"
               loading="lazy"
               src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-500.webp"
-              alt="Scène photographiée par Nina Carducci avec deux femmes dans une espace lumineux.
-            Elles sont assises et sourient en direction d'un interlocuteur hors-champ"
+              alt="Deux femmes assises dans un espace lumineux sourient vers un point hors-champ."
             />
             <img
               style="aspect-ratio: 500 / 400"
@@ -288,7 +303,7 @@
               class="gallery-item"
               loading="lazy"
               src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-500.webp"
-              alt="Portrait d'une jeune femme en noir se passant la main dans les cheveux l'air absorbée dans ses pensées."
+              alt="Portrait d'une jeune femme en noir, la main dans les cheveux, absorbée dans ses pensées."
             />
             <img
               style="aspect-ratio: 500 / 333"
@@ -304,8 +319,7 @@
               class="gallery-item"
               loading="lazy"
               src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-500.webp"
-              alt="Portrait d'une femme travaillant à son bureau par Nina Carducci.
-            Devant elle un ordinateur portable ouvert, elle sourit et lève la tête en direction de l'objectif"
+              alt="Une femme travaillant devant un ordinateur sourit tête levée vers l'objectif."
             />
           </div>
         </div>
@@ -392,9 +406,14 @@
             </p>
             <form action="#" method="post">
               <label for="nom">Nom</label>
-              <input type="text" name="nom" id="nom" />
+              <input type="text" name="nom" id="nom" autocomplete="name" />
               <label for="email">Email</label>
-              <input type="email" name="email" id="email" />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="email"
+              />
               <label for="message">Message</label>
               <textarea
                 name="message"
@@ -422,8 +441,7 @@
                 (min-width: 640px) calc(-975vw + 6653px),
                 calc(75.94vw - 58px)
                 "
-              alt="Boitier d'appareil photo en clair-obscure. Le cadrage est serré sur l'appareil, une lumière orangée l'éclaire
-		              par la droite, le reste de l'image est sombre"
+              alt="Un boitier d'appareil photo en clair-obscur, éclairé de la droite par une lumière orangée."
               style="aspect-ratio: 384 / 383"
               loading="lazy"
             />
@@ -432,21 +450,4 @@
       </section>
     </main>
   </body>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Nina Carducci | Photographe",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "68 avenue d'Alsace-Lorraine",
-        "postalCode": "33200",
-        "addressLocality": "Bordeaux"
-      },
-      "telephone": "05 56 67 78 89",
-      "openingHours": "Mo,Tu,We,Th,Fr 10:00-19:00",
-      "priceRange": "50&euro; - 350&euro;",
-      "image": "https://aurelienporte.github.io/oc_p9_nina_carducci/assets/images/nina-384.webp"
-    }
-  </script>
 </html>
